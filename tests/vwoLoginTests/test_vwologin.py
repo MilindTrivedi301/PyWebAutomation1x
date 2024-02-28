@@ -6,16 +6,18 @@ import pytest
 from selenium import webdriver
 
 from tests.pageObjects.loginPage import LoginPage
+from tests.pageObjects.dashboardPage import DashboardPage
 
+#start the webdriver
+#call the page
+#write the verification logic
 
-# Start the web
 @pytest.fixture
 def setup():
     driver = webdriver.Chrome()
     driver.maximize_window()
     driver.get("https://app.vwo.com")
     return driver
-
 
 @allure.epic("VWO Login Test")
 @allure.feature("TC#0 - VWO App Negative Test")
@@ -29,7 +31,6 @@ def test_vwologin_negative(setup):
     time.sleep(2)
 
 
-
 @allure.epic("VWO Login Test")
 @allure.feature("TC#1 - VWO App Positive Test")
 def test_vwologin_positive(setup):
@@ -39,3 +40,4 @@ def test_vwologin_positive(setup):
     time.sleep(5)
     assert "Dashboard" in driver.title
     time.sleep(2)
+

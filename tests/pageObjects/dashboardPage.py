@@ -13,6 +13,7 @@ class DashboardPage():
 
     def get_user_logged_in (self):
         return self.driver.find_element(*DashboardPage.user_logged_in)
+        # here '*' means we are using the current class class DashboardPage()
 
 
     def userloggedin_text(self):

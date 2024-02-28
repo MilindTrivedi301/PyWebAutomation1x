@@ -24,10 +24,8 @@ def setup(request):
     request.cls.katalon_url = katalon_url
     request.cls.hr_url = hr_url
 
-    yield driver # This is signal to Py int -> driver(sometime) -> quit
+    yield driver    # This is signal to Py int -> driver(sometime) -> quit
     driver.quit()
-
-
 
 
 

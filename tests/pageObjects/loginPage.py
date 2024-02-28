@@ -55,5 +55,5 @@ class LoginPage():
     #     self.get_freetrail().click()
 
 # get username and send keys - email
-# get password and send keys - email
+# get password and send keys - password
 # click the submit button and navigate to dashboard Page
