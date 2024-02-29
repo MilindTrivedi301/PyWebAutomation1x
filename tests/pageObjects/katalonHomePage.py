@@ -17,7 +17,7 @@ class KatalonHomePage():
         self.driver = driver
 
     # Page Locators
-    make_appointment = (By.ID, "btn-make-appointment")
+    make_appointment = (By.ID, "btn-make-appointment")      #tuple
 
     # Return a WebElement ->  username
     def get_make_appointment(self):
@@ -26,9 +26,9 @@ class KatalonHomePage():
     # Page Actions
 
     def click_homepage(self):
-        time.sleep(3)
+        time.sleep(10)
         self.get_make_appointment().click()
 
-    def click_homepage(self,username):
-        time.sleep(3)
+    def click_homepage(self):
+        time.sleep(10)
         self.get_make_appointment().click()

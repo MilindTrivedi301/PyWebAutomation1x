@@ -34,4 +34,10 @@
 - pip install mysql-connector-python
 - pip install pytest-reportportal
 
+**Command to Run all the test cases parallelly**
+pip install pytest-xdist
+pytest -n auto tests/vwoLoginTests/pom/test_vwologin_pom.py -s -v
 pytest -n auto tests/vwoLoginTests/pom/test_*
+
+**Command to Run specific test case**
+pytest -n auto -k "smoke" tests/vwoLoginTests/pom/test_*

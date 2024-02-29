@@ -16,6 +16,7 @@ def setup(request):
     base_url = os.getenv("BASE_URL")
     katalon_url = os.getenv("KATALON_URL")
     hr_url = os.getenv("HR_APP_URL")
+    #driver.get(base_url)
 
     request.cls.driver = driver
     request.cls.username = username
