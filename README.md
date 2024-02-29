@@ -40,4 +40,5 @@ pytest -n auto tests/vwoLoginTests/pom/test_vwologin_pom.py -s -v
 pytest -n auto tests/vwoLoginTests/pom/test_*
 
 **Command to Run specific test case**
-pytest -n auto -k "smoke" tests/vwoLoginTests/pom/test_*
+pytest -n auto -k "smoke" tests/vwoLoginTests/pom/test_* 
+
