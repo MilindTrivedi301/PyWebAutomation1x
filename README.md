@@ -42,3 +42,4 @@ pytest -n auto tests/vwoLoginTests/pom/test_*
 **Command to Run specific test case**
 pytest -n auto -k "smoke" tests/vwoLoginTests/pom/test_* 
 
+pip freeze > requirements.txt
